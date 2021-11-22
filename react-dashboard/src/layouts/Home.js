@@ -83,10 +83,13 @@ const Home = () => {
 
     return (
         <main>
-            <div className="main__container">
+            <div className="main__container animate__animated animate__fadeInUp">
                 <Form>
-                    <Label style={{ marginTop: "24px", marginBottom: "24px", textAlign: "center" }} ><h1>Research Per State and City</h1></Label>
-                    <Row style={{ marginTop: "24px", marginBottom: "24px" }}>
+                    <div className="head">Research Per State and City</div>
+                    <Row style={{ marginTop: "24px", marginBottom: "24px", textAlign: "left" }}>
+                        <div className="col-xs-2">
+
+                        </div>
                         <Col xs={5}>
                             <FormGroup>
                                 <Label>State</Label>
@@ -120,88 +123,90 @@ const Home = () => {
                             </FormGroup>
                         </Col>
                     </Row>
-                    <Col style={{ padding: "20px", textAlign: "left" }}>
+                    <Col style={{ padding: "0px", textAlign: "left" }}>
                         <Button onClick={() => formSubbmit()} color='primary'>
                             Submit
                         </Button>
                     </Col>
                 </Form>
-                {showChart ?
-                    <Container fluid className='contant-container'>
-                        <Row>
-                            <Col xs={3} style={{ margin: "auto" }}>
-                                <h2 style={{ fontWeight: "bold" }}>Success Rate Of Category</h2>
-                            </Col>
-                            <Col >
-                                <ReactApexChart
-                                    options={{
-                                        chart: {
-                                            width: 500,
-                                            type: "pie",
-                                        },
-                                        labels:
-                                            categorydatalabels,
-                                        responsive: [
-                                            {
-                                                breakpoint: 480,
-                                                options: {
-                                                    chart: {
-                                                        width: 300,
-                                                    },
-                                                    legend: {
-                                                        position: "bottom",
+                {
+                    showChart ?
+                        <Container fluid className='contant-container animate__animated animate__fadeInUp' style={{ padding: "20px" }} >
+                            <Row>
+                                <Col xs={3} style={{ margin: "auto" }}>
+                                    <h2 style={{ fontWeight: "bold" }}>Success Rate Of Category</h2>
+                                </Col>
+                                <Col >
+                                    <ReactApexChart
+                                        options={{
+                                            chart: {
+                                                width: 500,
+                                                type: "pie",
+                                            },
+                                            labels:
+                                                categorydatalabels,
+                                            responsive: [
+                                                {
+                                                    breakpoint: 480,
+                                                    options: {
+                                                        chart: {
+                                                            width: 300,
+                                                        },
+                                                        legend: {
+                                                            position: "bottom",
+                                                        },
                                                     },
                                                 },
+                                            ],
+                                        }}
+                                        series={
+                                            categorycountvalue
+                                        }
+                                        type='pie'
+                                        width={500}
+                                    />
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col xs={3} style={{ margin: "auto" }}>
+                                    <h2 style={{ fontWeight: "bold" }}>Success Rate Of SubCategory</h2>
+                                </Col>
+                                <Col>
+                                    <ReactApexChart
+                                        options={{
+                                            chart: {
+                                                width: 500,
+                                                type: "pie",
                                             },
-                                        ],
-                                    }}
-                                    series={
-                                        categorycountvalue
-                                    }
-                                    type='pie'
-                                    width={500}
-                                />
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col xs={3} style={{ margin: "auto" }}>
-                                <h2 style={{ fontWeight: "bold" }}>Success Rate Of SubCategory</h2>
-                            </Col>
-                            <Col>
-                                <ReactApexChart
-                                    options={{
-                                        chart: {
-                                            width: 500,
-                                            type: "pie",
-                                        },
-                                        labels:
-                                            subcategorydatalabels,
-                                        responsive: [
-                                            {
-                                                breakpoint: 480,
-                                                options: {
-                                                    chart: {
-                                                        width: 300,
-                                                    },
-                                                    legend: {
-                                                        position: "bottom",
+                                            labels:
+                                                subcategorydatalabels,
+                                            responsive: [
+                                                {
+                                                    breakpoint: 480,
+                                                    options: {
+                                                        chart: {
+                                                            width: 300,
+                                                        },
+                                                        legend: {
+                                                            position: "bottom",
+                                                        },
                                                     },
                                                 },
-                                            },
-                                        ],
-                                    }}
-                                    series={
-                                        subcategorycountvalue
-                                    }
-                                    type='pie'
-                                    width={500}
-                                />
-                            </Col>
-                        </Row>
+                                            ],
+                                        }}
+                                        series={
+                                            subcategorycountvalue
+                                        }
+                                        type='pie'
+                                        width={500}
+                                    />
+                                </Col>
+                            </Row>
 
-                    </Container> : null}
-            </div>
-        </main>
+                        </Container> : null
+                }
+            </div >
+        </main >
     )
 }
 

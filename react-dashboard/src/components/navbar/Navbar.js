@@ -20,7 +20,6 @@ const Navbar = ({ sidebarOpen, openSidebar }) => {
                     <i className="fa fa-clock-o"></i>
                 </a> */}
                 <a href="#">
-                    <i className="fa fa-user"></i>
                 </a>
             </div>
         </nav>

@@ -1,5 +1,5 @@
 .navbar{
-    background: #ffffff;
+    background: #000000;
     grid-area: nav;
     height: 60px;
     display:flex;
@@ -23,7 +23,7 @@ font-size:15px;
 font-weight: 700;    
 }
 .navbar__left .active_link{
-    color: #265acc;
+    color: #ececec;
     border-bottom: 3px solid #265acc;
     padding-bottom: 12px;
 }

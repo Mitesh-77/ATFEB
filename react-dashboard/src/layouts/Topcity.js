@@ -80,9 +80,9 @@ const Top10City = () => {
 
     return (
         <main>
-            <div className="main__container">
+            <div className="main__container animate__animated animate__fadeInUp">
                 <Form>
-                    <Label style={{ marginTop: "24px", marginBottom: "24px", textAlign: "center" }} ><h1>Research Per Category and SubCategory</h1></Label>
+                    <div className="head">Top 10 City Based On Category</div>
                     <Row style={{ marginTop: "24px", marginBottom: "24px" }}>
                         <Col xs={5}>
                             <FormGroup>
@@ -117,7 +117,7 @@ const Top10City = () => {
                             </FormGroup>
                         </Col>
                     </Row>
-                    <Col style={{ padding: "20px", textAlign: "left" }}>
+                    <Col style={{ padding: "0px", textAlign: "left" }}>
                         <Button onClick={() => formSubbmit()} color='primary'>
                             Submit
                         </Button>
@@ -125,7 +125,7 @@ const Top10City = () => {
                 </Form>
 
                 {showChart ?
-                    <Container fluid className='contant-container'>
+                    <Container fluid className='contant-container animate__animated animate__fadeInUp'>
 
                         <Row>
                             <Col>

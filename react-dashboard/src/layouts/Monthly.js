@@ -95,9 +95,9 @@ const MonthlySales = () => {
 
     return (
         <main>
-            <div className="main__container">
+            <div className="main__container animate__animated animate__fadeInUp">
                 <Form>
-                    <Label style={{ marginTop: "24px", marginBottom: "24px", textAlign: "center" }} ><h1>Research Per State and City</h1></Label>
+                    <div className="head">Monthly Research Per State and City</div>
                     <Row style={{ marginTop: "24px", marginBottom: "24px" }}>
                         <Col xs={10}>
                             <FormGroup>
@@ -148,14 +148,14 @@ const MonthlySales = () => {
                             </FormGroup>
                         </Col>
                     </Row>
-                    <Col style={{ padding: "20px", textAlign: "left" }}>
+                    <Col style={{ padding: "0px", textAlign: "left" }}>
                         <Button onClick={() => formSubbmit()} color='primary'>
                             Submit
                         </Button>
                     </Col>
                 </Form>
                 {showChart ?
-                    <Container fluid className='contant-container'>
+                    <Container fluid className='contant-container animate__animated animate__fadeInUp'>
                         <Row>
                             <Col xs={3} style={{ margin: "auto" }}>
                                 <h2 style={{ fontWeight: "bold" }}>Monthly profit</h2>

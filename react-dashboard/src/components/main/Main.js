@@ -22,24 +22,24 @@ const Main = () => {
                     </div>
 
                     <div class="card">
-                        <i className="fa fa-calendar fa-2x text-red"></i>
+                        <i className="fa fa-user fa-2x text-red"></i>
                         <div class="card_inner">
-                            <p class="text-primary-p">Times Of Watching</p>
-                            <span className="font-bold text-title">5000</span>
+                            <p class="text-primary-p">Number of Cutomers</p>
+                            <span className="font-bold text-title">900</span>
                         </div>
                     </div>
                     <div class="card">
                         <i className="fa fa-video-camera fa-2x text-yellow"></i>
                         <div class="card_inner">
                             <p class="text-primary-p">Times Of Watching</p>
-                            <span className="font-bold text-title">5000</span>
+                            <span className="font-bold text-title">1249</span>
                         </div>
                     </div>
                     <div class="card">
                         <i className="fa fa-thumbs-up fa-2x text-green"></i>
                         <div class="card_inner">
-                            <p class="text-primary-p">Times Of Watching</p>
-                            <span className="font-bold text-title">5000</span>
+                            <p class="text-primary-p">Number of Likes</p>
+                            <span className="font-bold text-title">10567</span>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ const Main = () => {
                                 <h1>Daily reports</h1>
                                 <p>Cupertino</p>
                             </div>
-                            <i className="fa fa-usd"></i>
+                            <i className="fa fa-usd">1675</i>
                         </div>
                         <Chart />
                     </div>
@@ -61,7 +61,7 @@ const Main = () => {
                                 <h1>stats reports</h1>
                                 <p>Cupertino, California, USA</p>
                             </div>
-                            <i className="fa fa-usd"></i>
+                            <i className="fa fa-usd">275600</i>
                         </div>
                         <div className="charts__right__cards">
                             <div className="card1">
@@ -73,12 +73,12 @@ const Main = () => {
                                 <p>$2,00,300</p>
                             </div>
                             <div className="card3">
-                                <h1>Users</h1>
-                                <p>50000</p>
+                                <h1>Customers</h1>
+                                <p>900</p>
                             </div>
                             <div className="card4">
                                 <h1>Orders</h1>
-                                <p>10000</p>
+                                <p>10564</p>
                             </div>
                         </div>
                     </div>

@@ -1,3 +1,5 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
 main{
     background: #f3f4f6;
     grid-area: main;
@@ -5,6 +7,9 @@ main{
 }
 .main__container{
     padding: 20px 35px;
+    margin: 6px;
+    box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px; 
+    background: white;
 }
 .main__title{
     display: flex;
@@ -148,6 +153,27 @@ font-size: 25px;
     padding: 25px;
     border-radius: 5px;
     font-size: 14px;
+}
+.head{
+margin-top: 10px;
+margin-bottom: 24px;
+text-align: left;
+width: 100%; 
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+border-radius: 10px;
+/* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  */
+padding: 10px;
+font-size: 34px;
+background: white;
+}
+.contant-container
+{
+box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+/* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+padding-left: 0px;
+border-radius: 5px;
+margin-top: 20px;
+background-color: white;
 }
 @media only screen and(max-width: 978px){
     .main__cards{
